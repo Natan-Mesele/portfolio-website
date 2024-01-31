@@ -3,6 +3,7 @@ import "./App.css";
 import styled, { keyframes } from "styled-components";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import CustomCursor from "./components/CustomCursor";
 
 const gradientAnimation = keyframes`
   0% {
@@ -29,10 +30,10 @@ function App() {
 
   return (
     <div>
-      <AnimatedBackground>
+      
         <Header />
         <Hero />
-      </AnimatedBackground>
+        <CustomCursor />
     </div>
   );
 }
