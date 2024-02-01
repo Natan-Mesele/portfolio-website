@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
-import styled, { keyframes } from "styled-components";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
-import CustomCursor from "./components/CustomCursor";
 
 const gradientAnimation = keyframes`
   0% {
@@ -26,14 +24,12 @@ background-size: 400% 400%;
 `;
 
 function App() {
-  const [someState, setSomeState] = useState(null);
-
   return (
     <div>
-      
+      <AnimatedBackground>
         <Header />
         <Hero />
-        <CustomCursor />
+      </AnimatedBackground>
     </div>
   );
 }
